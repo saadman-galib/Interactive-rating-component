@@ -8,6 +8,8 @@
             type="image/x-icon"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
         <title>Interactive rating component</title>
     </head>
     <body>
@@ -15,7 +17,8 @@
             class="flex items-center justify-center w-full h-screen main-container bg-very-dark-blue"
         >
             <div
-                class="hidden p-[32px] font-overpass rounded-[30px] card h-[412px] w-[412px] bg-card-blue"
+                id="rate"
+                class="p-[32px] font-overpass rounded-[30px] card h-[412px] w-[412px] bg-card-blue"
             >
                 <img
                     src="./assets/icon-star.svg"
@@ -36,13 +39,18 @@
                     </p>
                 </div>
                 <div class="flex flex-row py-5">
-                    <p class="number-first">1</p>
-                    <p class="number">2</p>
-                    <p class="number">3</p>
-                    <p class="number">4</p>
-                    <p class="number-last">5</p>
+                    <p class="number-first number bg-[#262F38] text-[#828B94]">
+                        1
+                    </p>
+                    <p class="number bg-[#262F38] text-[#828B94]">2</p>
+                    <p class="number bg-[#262F38] text-[#828B94]">3</p>
+                    <p class="number bg-[#262F38] text-[#828B94]">4</p>
+                    <p class="number-last number bg-[#262F38] text-[#828B94]">
+                        5
+                    </p>
                 </div>
                 <button
+                    id="btn"
                     class="transition duration-500 font-semibold text-white uppercase bg-[#F57528] hover:text-[#F57528] hover:bg-white w-full rounded-3xl py-2 mt-3"
                 >
                     submit
@@ -50,7 +58,8 @@
             </div>
 
             <div
-                class="font-overpass rounded-[30px] card h-[412px] w-[412px] bg-card-blue"
+                id="select"
+                class="hidden font-overpass rounded-[30px] card h-[412px] w-[412px] bg-card-blue"
             >
                 <img
                     src="./assets/illustration-thank-you.svg"
@@ -59,6 +68,7 @@
                 />
 
                 <p
+                    id="select-p"
                     class="bg-[#262E39] text-[#F57528] rounded-full mb-8 flex justify-center w-max mx-auto px-5 items-center pt-[6px] pb-[3px] text-[15px]"
                 >
                     You selected 0 out of 5
@@ -67,11 +77,19 @@
                 <div>
                     <h2
                         class="text-3xl mx-auto text-center text-[28px] font-semibold text-[#FEFFFF]"
-                    >Thank you!</h2>
-                    <p class="mt-3 mx-auto px-6 text-center w-96 text-[#949BA5] text-[15px] leading-6">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+                    >
+                        Thank you!
+                    </h2>
+                    <p
+                        class="mt-3 mx-auto px-6 text-center w-96 text-[#949BA5] text-[15px] leading-6"
+                    >
+                        We appreciate you taking the time to give a rating. If
+                        you ever need more support, don’t hesitate to get in
+                        touch!
+                    </p>
                 </div>
             </div>
         </div>
-        <script type="module" src="/main.js"></script>
+        <script src="/main.js"></script>
     </body>
 </html>

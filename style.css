@@ -4,14 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.number,
-.number-first,
-.number-last {
-    @apply rounded-full transition duration-500 mx-auto w-[48px] flex justify-center items-center h-12 hover:text-white hover:bg-[#7C8898] bg-[#262F38] cursor-pointer text-[#828B94];
-}
-
 .number {
-    @apply mx-3;
+    @apply rounded-full transition duration-300 min-w-[45px] flex justify-center items-center min-h-[45px] hover:text-white hover:bg-[#7C8898] cursor-pointer mx-3;
 }
 
 .number-first {
