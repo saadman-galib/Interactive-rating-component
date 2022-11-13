@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .number {
-    @apply rounded-full transition duration-300 min-w-[45px] flex justify-center items-center min-h-[45px] hover:text-white hover:bg-[#7C8898] cursor-pointer mx-3;
+    @apply rounded-full transition duration-300 min-w-[48px] min-h-[48px] flex justify-center items-center hover:text-white hover:bg-[#7C8898] cursor-pointer mx-3 mt-2;
 }
 
 .number-first {
