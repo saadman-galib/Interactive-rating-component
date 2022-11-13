@@ -24,9 +24,13 @@ numberList.forEach((e) => {
         prevSelect = e;
     });
 });
-
 button.addEventListener("click", () => {
-    rate.classList.add("hidden");
-    select.classList.remove("hidden");
-    selectp.innerHTML = "You selected " + value + " out of 5";
+    if(value){
+            rate.classList.add("hidden");
+            select.classList.remove("hidden");
+            selectp.innerHTML = "You selected " + value + " out of 5";
+        }
+    else{
+        alert("Please select a number");
+    }
 });
